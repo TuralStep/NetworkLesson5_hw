@@ -78,6 +78,7 @@
 
         <DataGrid x:Name="dg_cars"
                   Grid.Row="2"
+                  ItemsSource="{Binding Cars}"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
                   IsReadOnly="True"/>
