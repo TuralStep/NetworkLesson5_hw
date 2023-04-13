@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1000">
-    <Grid>
+        Title="MainWindow" Height="450" Width="1000" Loaded="Window_Loaded">
+    <Grid x:Name="grid">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -17,22 +17,28 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Margin="130 0 0 0"
                        FontSize="20"
-                       Width="110">Id</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.Id,Mode=TwoWay}">Id</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110">Make</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.Make,Mode=TwoWay}">Make</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110">Model</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.Model,Mode=TwoWay}">Model</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110">Year</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.Year,Mode=TwoWay}">Year</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110">VIN</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.VIN,Mode=TwoWay}">VIN</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110">Color</TextBlock>
+                       Width="110"
+                       Text="{Binding Car.Color,Mode=TwoWay}">Color</TextBlock>
         </StackPanel>
         
         <StackPanel Orientation="Horizontal" Grid.Row="1">
