@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="920">
+        Title="MainWindow" Height="450" Width="1000">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -73,6 +73,13 @@
                 Name="txt_color"
                 Width="110"
                 Margin="10"/>
+
+            <Button
+                Click="Button_Click"
+                Margin="10"
+                FontSize="20">
+                Execute
+            </Button>
 
         </StackPanel>
 
