@@ -33,14 +33,15 @@ namespace Client
         public ObservableCollection<Car> Cars { get; set; }
         private TcpClient client;
 
+        public Car Car { get; set; }
 
-        public Car Car
-        {
-            get { return (Car)GetValue(carProperty); }
-            set { SetValue(carProperty, value); }
-        }
-        public static readonly DependencyProperty carProperty =
-            DependencyProperty.Register("car", typeof(Car), typeof(MainWindow), new PropertyMetadata(0));
+        //public Car Car
+        //{
+        //    get { return (Car)GetValue(carProperty); }
+        //    set { SetValue(carProperty, value); }
+        //}
+        //public static readonly DependencyProperty carProperty =
+        //    DependencyProperty.Register("Car", typeof(Car), typeof(MainWindow), new PropertyMetadata(0));
 
 
 

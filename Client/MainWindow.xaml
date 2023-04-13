@@ -17,35 +17,29 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Margin="130 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.Id,Mode=TwoWay}">Id</TextBlock>
+                       Width="110">Id</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.Make,Mode=TwoWay}">Make</TextBlock>
+                       Width="110">Make</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.Model,Mode=TwoWay}">Model</TextBlock>
+                       Width="110">Model</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.Year,Mode=TwoWay}">Year</TextBlock>
+                       Width="110">Year</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.VIN,Mode=TwoWay}">VIN</TextBlock>
+                       Width="110">VIN</TextBlock>
             <TextBlock Margin="20 0 0 0"
                        FontSize="20"
-                       Width="110"
-                       Text="{Binding Car.Color,Mode=TwoWay}">Color</TextBlock>
+                       Width="110">Color</TextBlock>
         </StackPanel>
         
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <ComboBox
                 Name="cb_command"
                 Width="100"
-                FontSize="24"
+                FontSize="18"
                 SelectionChanged="cb_command_SelectionChanged"
                 Margin="10"/>
 
@@ -53,32 +47,38 @@
             <TextBox
                 Name="txt_id"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.Id,Mode=TwoWay}"/>
 
             <TextBox
                 Name="txt_make"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.Make,Mode=TwoWay}"/>
 
             <TextBox
                 Name="txt_model"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.Model,Mode=TwoWay}"/>
 
             <TextBox
                 Name="txt_year"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.Year,Mode=TwoWay}"/>
 
             <TextBox
                 Name="txt_vin"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.VIN,Mode=TwoWay}"/>
 
             <TextBox
                 Name="txt_color"
                 Width="110"
-                Margin="10"/>
+                Margin="10"
+                Text="{Binding Car.Color,Mode=TwoWay}"/>
 
             <Button
                 Click="Button_Click"
