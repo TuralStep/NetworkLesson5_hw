@@ -10,6 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{3CABAEF2-680E-4736-8BD8-D6ABE8830DC6}"
 	ProjectSection(SolutionItems) = preProject
 		Car.cs = Car.cs
+		Command.cs = Command.cs
+		HttpMethod.cs = HttpMethod.cs
 	EndProjectSection
 EndProject
 Global
