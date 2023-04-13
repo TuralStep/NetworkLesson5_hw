@@ -79,8 +79,14 @@ namespace Client
             }
 
             if (cb_command.SelectedItem is MyHttpMethod method)
-
                 ExecuteServerCommand(method);
+
+            txt_id.Text = "0";
+            txt_make.Text = "";
+            txt_model.Text = "";
+            txt_vin.Text = "";
+            txt_year.Text = "";
+            txt_color.Text = "";
         }
 
 
