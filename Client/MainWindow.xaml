@@ -5,8 +5,82 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="920">
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="130 0 0 0"
+                       FontSize="20"
+                       Width="110">Id</TextBlock>
+            <TextBlock Margin="20 0 0 0"
+                       FontSize="20"
+                       Width="110">Make</TextBlock>
+            <TextBlock Margin="20 0 0 0"
+                       FontSize="20"
+                       Width="110">Model</TextBlock>
+            <TextBlock Margin="20 0 0 0"
+                       FontSize="20"
+                       Width="110">Year</TextBlock>
+            <TextBlock Margin="20 0 0 0"
+                       FontSize="20"
+                       Width="110">VIN</TextBlock>
+            <TextBlock Margin="20 0 0 0"
+                       FontSize="20"
+                       Width="110">Color</TextBlock>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <ComboBox
+                Name="cb_command"
+                Width="100"
+                FontSize="24"
+                SelectionChanged="cb_command_SelectionChanged"
+                Margin="10"/>
+
+
+            <TextBox
+                Name="txt_id"
+                Width="110"
+                Margin="10"/>
+
+            <TextBox
+                Name="txt_make"
+                Width="110"
+                Margin="10"/>
+
+            <TextBox
+                Name="txt_model"
+                Width="110"
+                Margin="10"/>
+
+            <TextBox
+                Name="txt_year"
+                Width="110"
+                Margin="10"/>
+
+            <TextBox
+                Name="txt_vin"
+                Width="110"
+                Margin="10"/>
+
+            <TextBox
+                Name="txt_color"
+                Width="110"
+                Margin="10"/>
+
+        </StackPanel>
+
+        <DataGrid x:Name="dg_cars"
+                  Grid.Row="2"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  IsReadOnly="True"/>
 
     </Grid>
 </Window>

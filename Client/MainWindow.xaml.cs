@@ -24,5 +24,10 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        private void cb_command_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
